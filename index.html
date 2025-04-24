@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio website</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <link rel="stylesheet" href="style1.css"> </head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="43.PNG" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li>
+                        <a href="#about">About</a>
+                    </li>
+                    <li>
+                        <a href="#contact">Contact</a>
+                    </li>
+                    <i class='bx bx-chevrons-right' onclick="closemenu()"></i>
+
+                    </i>
+                </ul>
+                <i class='bx bx-menu' onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text ">
+
+                <h1>Hi, I'm
+                    <span>Deepak Vats</span></h1><br>
+                <p>Welcome to my World !</p>
+            </div>
+        </div>
+    </div>
+
+    <!---------------------About------------------------------->
+    <div id="about">
+        <div class="container">
+
+            <div class="row ">
+                <div class="about-col-1 ">
+                    <img src="1.png" </div>
+                </div>
+                <div class="about-col-2 ">
+
+                    <h1 class="sub-title">About Me
+                    </h1>
+                    <p>I am Deepak Vats, a dedicated educator specializing in English, Hindi, and Mathematics. I strive to make learning engaging and accessible, ensuring students build strong foundational skills and gain confidence in their abilities. My
+                        teaching philosophy revolves around simplifying complex concepts and fostering curiosity and creativity. I take pride in creating a supportive environment that encourages both academic and personal growth. As a mentor, I am committed
+                        to inspiring lifelong learning and empowering my students to achieve their fullest potential.
+                    </p>
+                    <div class="tab-title">
+                        <p class="tab-link active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-link" onclick="opentab('Experience')">Experience</p>
+                        <p class="tab-link" onclick="opentab('Education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ol>
+                            <p>
+                                <ol>
+                                    <li>Effective Teaching and Mentoring</li>
+                                    <li>Leadership and Management</li>
+                                    <li>Public Speaking</li>
+                                    <li>Community Development</li>
+                                    <li>Educational Content Creation</li>
+                                </ol>
+                        </ol>
+
+
+
+                    </div>
+                    <div class="tab-contents" id="Experience">
+                        <span>
+                        <ol>
+                            <li> Over 5 years of teaching experience, specializing in English, Hindi, and Mathematics across diverse age groups. </li>
+                            <li>Skilled at designing engaging lesson plans to simplify complex concepts for students.
+                            </li>
+                            <li>Proven track record in improving student performance and fostering a love for learning.</li>
+                            <li> Experienced in classroom management and creating an inclusive, supportive learning environment.
+                                <li> Adept at mentoring students, encouraging personal development, and addressing individual academic needs.</li>
+                        </ol>
+</span>
+
+
+                    </div>
+                    <div class="tab-contents" id="Education">
+                        <ol>
+                            <LI>I hold a degree of Bachlor of Arts at Baba Saheb Bhim Rao Ambedkar Bihar University (BRABU) Muzaffarpur Bihar</LI>
+                            <li>I hold a degree of Nursery Teacher Training and Education- INDIA</li>
+                            <li> I hold a degree of Master of Arts (M.A) at Directorate of Distance Education- LNMU</li>
+
+                        </ol>
+
+
+
+                    </div>
+                </div>
+            </div>
+            <!-------------------------Contact--------------------------------------->
+            <div id="contact">
+                <div class="container ">
+                    <div class="row ">
+                        <div class="contact-left ">
+
+                            <h1 class="sub-title">Contact Me</h1>
+                            <p>If you would like to get in touch with me, please send an email or messages</p>
+                            <p>
+                                <a href=" "><i class='bx bxs-envelope'></i>Email <br>deepakvats12.com</a>
+                            </p>
+                            <p>
+                                <a><i class='bx bxs-map'></i>Address<br>
+                                    Motihari,Bihar,India.
+                                </a>
+                            </p>
+                            <p>
+                                <a href="https://wa.me/qr/OCVFEBA6QYZTN1"> <i class='bx bxl-whatsapp'></i>+918227080652 </a>
+                            </p>
+                            <div class="social-icons">
+
+                                <a href="https://www.facebook.com/share/16PDiFJjdS/"><i class='bx bxl-facebook-circle'></i></a>
+                                <a href="https://www.instagram.com/thedeepakvats1?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><i class='bx bxl-instagram'></i></a>
+                                <a href=" ">
+                                    <i class='bx bxl-twitter'></i></a>
+                                <a href="https://youtube.com/@deepaksirofficial4081?si=XyYbcg8NaJEmnQLJ"><i class='bx bxl-youtube'></i></a>
+
+                                </a>
+                            </div>
+                        </div>
+                        <div class="contact-right">
+
+
+                        </div>
+
+                    </div>
+                </div>
+                <div class="copyright ">
+                    <p>©Developed by Shivam.<i class='bx bxs-heart'></i>2025</p>
+                </div>
+
+                <script>
+                    var tablink = document.getElementsByClassName("tab-link");
+                    var tabcontents = document.getElementsByClassName("tab-contents");
+
+                    function opentab(tabname) {
+                        for (let x of tablink) {
+                            x.classList.remove("active-link");
+                        }
+                        for (let tabcontent of tabcontents) {
+                            tabcontent.classList.remove("active-tab");
+                        }
+                        event.currentTarget.classList.add("active-link");
+                        document.getElementById(tabname).classList.add("active-tab");
+                    }
+                </script>
+                <script>
+                    var sidemnu = document.getElementById("sidemenu");
+
+                    function openmenu() {
+                        sidemnu.style.right = "0 ";
+
+                    }
+
+                    function closemenu() {
+                        sidemnu.style.right = "-200px ";
+
+                    }
+                </script>
+
+</body>
+
+</html>
